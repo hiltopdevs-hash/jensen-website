@@ -1,6 +1,6 @@
 # Website van Jensen
 
-Openbare pagina's van Jensen op https://jensen.wilhil.nl, via GitHub Pages: de voorpagina en de privacyverklaring.
+Openbare pagina's van Jensen op https://jensen.wilhil.nl, via GitHub Pages: de voorpagina, de privacyverklaring en de pagina om je account te laten verwijderen (`account-verwijderen/`, vereist door Google Play).
 
 - `privacy/index.html` wordt gemaakt door `build.py` uit `app/assets/privacy/privacyverklaring_nl.md` in de repository van de app. Wijzig de tekst daar, en draai dan `python3 build.py` (verwacht de app-repository in `../Jensen`, of geef het pad mee).
 - Kleuren in `style.css` zijn gelijk aan `JensenPalette` in de app. Lettertype Outfit staat in `fonts/` (OFL-licentie).
