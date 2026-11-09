@@ -1,0 +1,49 @@
+/* Kleuren gelijk aan JensenPalette in de app (lib/theme.dart) */
+@font-face { font-family: Outfit; font-weight: 400; font-display: swap; src: url(/fonts/Outfit-400.ttf) format("truetype"); }
+@font-face { font-family: Outfit; font-weight: 600; font-display: swap; src: url(/fonts/Outfit-600.ttf) format("truetype"); }
+
+:root {
+  --green: #3A8335;
+  --green-deep: #2C6528;
+  --ink: #18291A;
+  --ink-soft: #56685A;
+  --canvas: #F9FBF8;
+  --card: #FFFFFF;
+  --line: #DDE6DB;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --green: #A9D4A3;
+    --green-deep: #A9D4A3;
+    --ink: #E8F2E6;
+    --ink-soft: #A2B9A3;
+    --canvas: #101912;
+    --card: #1B271D;
+    --line: #2C3B2E;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: Outfit, system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--canvas);
+}
+main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+header.site { display: flex; align-items: center; gap: .75rem; margin-bottom: 2rem; }
+header.site a { display: flex; align-items: center; gap: .75rem; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 1.25rem; }
+header.site img { width: 2.5rem; height: 2.5rem; border-radius: .6rem; }
+h1 { font-size: 2rem; line-height: 1.2; font-weight: 600; margin: 0 0 .5rem; }
+h2 { font-size: 1.25rem; font-weight: 600; margin: 2rem 0 .5rem; }
+p, ul { margin: 0 0 1rem; }
+ul { padding-left: 1.25rem; }
+li { margin-bottom: .35rem; }
+a { color: var(--green-deep); text-underline-offset: .15em; }
+.meta { color: var(--ink-soft); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 1rem; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .9375rem; }
+footer a { color: inherit; }
